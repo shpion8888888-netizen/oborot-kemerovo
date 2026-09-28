@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Оборот — финансовый консалтинг в Кемерове</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f4;--ink:#10241f;--mut:#4d605a;--line:#d5dcd6;--pri:#0f5c4d;--onpri:#f6f7f4;--acc:#e6b422;--card:#ffffff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a17;--ink:#eef2ee;--mut:#9fb2ab;--line:#26403a;--pri:#2fa88f;--onpri:#08130f;--acc:#e6b422;--card:#13251f}}
+:root[data-theme="dark"]{--bg:#0d1a17;--ink:#eef2ee;--mut:#9fb2ab;--line:#26403a;--pri:#2fa88f;--onpri:#08130f;--acc:#e6b422;--card:#13251f}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:600 20px Unbounded,Onest,sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:22px;height:22px;border-radius:50%;border:4px solid var(--pri);border-right-color:var(--acc);display:block}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+.tel{font-weight:600;text-decoration:none;white-space:nowrap}
+@media(max-width:760px){nav{display:none}}
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+h1{font:600 clamp(30px,5.2vw,52px)/1.12 Unbounded,Onest,sans-serif;margin:0 0 22px;letter-spacing:-.01em}
+.lead{font-size:19px;color:var(--mut);max-width:34em;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;background:var(--pri);color:var(--onpri)}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.ring{width:100%;max-width:340px;justify-self:center}
+.ring svg{width:100%;height:auto;display:block}
+.spin{transform-origin:150px 150px;animation:sp 24s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.spin{animation:none}}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.ring{max-width:220px;order:-1;justify-self:start}.hero{padding-top:36px}}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font:600 clamp(24px,3.6vw,34px)/1.2 Unbounded,Onest,sans-serif;margin:0 0 36px;max-width:20em}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.svc div{padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.svc h3{font:600 17px/1.3 Onest,sans-serif;margin:0 0 8px}
+.svc p{margin:0;color:var(--mut);font-size:15.5px}
+@media(max-width:860px){.svc{grid-template-columns:1fr}}
+ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+ol li{counter-increment:s;padding-top:18px;border-top:3px solid var(--pri)}
+ol li::before{content:counter(s);font:600 22px Unbounded,sans-serif;color:var(--pri);display:block;margin-bottom:8px}
+ol b{display:block;margin-bottom:4px}
+ol span{color:var(--mut);font-size:15.5px}
+@media(max-width:860px){ol{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){ol{grid-template-columns:1fr}}
+.contact{background:var(--pri);color:var(--onpri);border-top:0}
+.contact h2{margin-bottom:28px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.cg p{margin:0 0 4px;opacity:.8;font-size:15px}
+.cg .v{font:600 22px/1.3 Unbounded,Onest,sans-serif;margin:0 0 24px;opacity:1}
+.cg a{text-decoration:none;border-bottom:2px solid var(--acc)}
+.contact .btn{background:var(--acc);color:#10241f}
+@media(max-width:760px){.cg{grid-template-columns:1fr}}
+footer{padding:26px 0;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top"><i></i>Оборот</a>
+<nav><a href="#uslugi">Услуги</a><a href="#kak">Как работаем</a><a href="#kontakty">Контакты</a></nav>
+<a class="tel" href="tel:+79051075765">+7 (905) 107-57-65</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Деньги вашего бизнеса должны работать, а не лежать</h1>
+<p class="lead">Финансовый консалтинг в Кемерове. Наведём порядок в учёте, найдём потери в обороте и составим план, по которому компания растёт.</p>
+<div class="btns"><a class="btn" href="tel:+79051075765">Позвонить</a><a class="btn o" href="#uslugi">Что мы делаем</a></div>
+</div>
+<div class="ring" aria-hidden="true">
+<svg viewBox="0 0 300 300"><circle cx="150" cy="150" r="118" fill="none" stroke="var(--line)" stroke-width="2"/>
+<circle cx="150" cy="150" r="80" fill="none" stroke="var(--pri)" stroke-width="18"/>
+<g class="spin"><circle cx="150" cy="32" r="14" fill="var(--acc)"/><circle cx="150" cy="150" r="118" fill="none" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 12"/></g>
+<text x="150" y="158" text-anchor="middle" font-family="Unbounded,sans-serif" font-weight="600" font-size="22" fill="var(--ink)">Оборот</text></svg>
+</div>
+</div></div>
+
+<section id="uslugi"><div class="wrap">
+<h2>С чем помогаем компаниям и предпринимателям</h2>
+<div class="svc">
+<div><h3>Финансовый анализ</h3><p>Разбираем прибыль, расходы и денежные потоки. Показываем, где бизнес теряет деньги.</p></div>
+<div><h3>Бюджетирование и планирование</h3><p>Строим бюджет и прогноз движения денег на год вперёд.</p></div>
+<div><h3>Управленческий учёт</h3><p>Настраиваем отчёты, которые понятны владельцу и помогают принимать решения.</p></div>
+<div><h3>Оптимизация налогов</h3><p>Подбираем законный режим и структуру, чтобы снизить налоговую нагрузку.</p></div>
+<div><h3>Привлечение финансирования</h3><p>Готовим документы и бизнес-план для кредита или инвестора.</p></div>
+<div><h3>Финансовая модель для старта</h3><p>Считаем окупаемость проекта до того, как вы вложите деньги.</p></div>
+</div></div></section>
+
+<section id="kak"><div class="wrap">
+<h2>Как мы работаем</h2>
+<ol>
+<li><b>Знакомство</b><span>Бесплатно обсуждаем задачу по телефону или на встрече.</span></li>
+<li><b>Диагностика</b><span>Изучаем ваши цифры и находим точки роста.</span></li>
+<li><b>План</b><span>Даём конкретные шаги со сроками и ожидаемым эффектом.</span></li>
+<li><b>Сопровождение</b><span>Помогаем внедрить и проверяем результат.</span></li>
+</ol>
+</div></section>
+
+<section id="kontakty" class="contact"><div class="wrap">
+<h2>Обсудим вашу задачу</h2>
+<div class="cg">
+<div>
+<p>Телефон</p><div class="v"><a href="tel:+79051075765">+7 (905) 107-57-65</a></div>
+<p>Адрес</p><div class="v">г. Кемерово,<br>Кузнецкий проспект, 106</div>
+</div>
+<div>
+<p>Первая консультация по телефону — без обязательств. Расскажите о задаче, и мы скажем, чем можем помочь.</p>
+<br><a class="btn" href="tel:+79051075765" style="border:0">Позвонить сейчас</a>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Оборот. Финансовый консалтинг, Кемерово.</div></footer>
+</body>
+</html>
